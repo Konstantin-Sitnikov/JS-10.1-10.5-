@@ -1,15 +1,11 @@
-//let userName = prompt ("Введите имя");
-let date = prompt ("Введите год рождения");
+let userName = prompt ("Введите имя");
+let userAge = +prompt ("Введите год рождения");
 
 
-console.log(Number.isInteger(+date))
+if (userAge) {
+  alert (`${userName}: ${2025 - userAge}`)
 
-
-if (Number.isInteger(+date)) {
-   alert("да")
-  
 } else {
-  alert("Год должен быть числом")
+  alert ("Год должен быть числом!")
 }
-
 
